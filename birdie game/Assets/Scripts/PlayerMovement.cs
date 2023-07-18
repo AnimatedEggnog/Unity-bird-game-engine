@@ -4,20 +4,27 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float baseSpeed; // The original base speed without power-ups
     public float speed;
     public float rotationSpeed;
     public float jumpSpeed;
     public float multiplier;
+    public float powerUpDuration = 60f; // Duration of each power-up in seconds
 
     private CharacterController characterController;
     private float ySpeed;
     private float originalStepOffset;
+    private bool isSpeedUpActive = false;
+    private bool isJumpUpActive = false;
+    private float speedUpTimer = 0f;
+    private float jumpUpTimer = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         originalStepOffset = characterController.stepOffset;
+        speed = baseSpeed; // Initialize the speed with the base speed
     }
 
     // Update is called once per frame
@@ -47,6 +54,28 @@ public class PlayerMovement : MonoBehaviour
             characterController.stepOffset = 0;
         }
 
+        // Check if power-ups are active and update the timers
+        if (isSpeedUpActive)
+        {
+            speedUpTimer -= Time.deltaTime;
+            if (speedUpTimer <= 0f)
+            {
+                // Speed Up power-up duration expired, reset the effect
+                speed = baseSpeed; // Reset the speed to the base speed
+                isSpeedUpActive = false;
+            }
+        }
+        if (isJumpUpActive)
+        {
+            jumpUpTimer -= Time.deltaTime;
+            if (jumpUpTimer <= 0f)
+            {
+                // Jump Up power-up duration expired, reset the effect
+                jumpSpeed = baseSpeed; // Reset the jump speed to the base speed
+                isJumpUpActive = false;
+            }
+        }
+
         Vector3 velocity = movementDirection * magnitude;
         velocity.y = ySpeed;
 
@@ -63,11 +92,21 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("Speed Up"))
         {
-            speed *= multiplier;
+            if (!isSpeedUpActive)
+            {
+                speed = baseSpeed * multiplier; // Multiply the base speed by the multiplier
+                isSpeedUpActive = true;
+                speedUpTimer = powerUpDuration;
+            }
         }
         if (other.CompareTag("Jump Up"))
         {
-            jumpSpeed *= multiplier;
+            if (!isJumpUpActive)
+            {
+                jumpSpeed = baseSpeed * multiplier; // Multiply the base speed by the multiplier
+                isJumpUpActive = true;
+                jumpUpTimer = powerUpDuration;
+            }
         }
     }
 }

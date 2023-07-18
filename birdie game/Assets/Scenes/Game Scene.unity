@@ -518,10 +518,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e130a52b36e8cc449cf486cc12ad956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseSpeed: 5
   speed: 5
   rotationSpeed: 720
   jumpSpeed: 5
   multiplier: 2
+  powerUpDuration: 60
 --- !u!4 &739614885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6788538757290762322, guid: ad4137f595ec8e2449cacca9df7d3735, type: 3}
