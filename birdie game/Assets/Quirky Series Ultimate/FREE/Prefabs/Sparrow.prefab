@@ -449,7 +449,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6788538757290762322}
   - component: {fileID: 6788538757290762321}
-  - component: {fileID: 6788538757290762327}
   - component: {fileID: 6788538757290762320}
   - component: {fileID: 6889093376551081054}
   m_Layer: 0
@@ -510,26 +509,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 6788538756395232118}
   m_Enabled: 1
---- !u!95 &6788538757290762327
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6788538757290762323}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a06e775a1f9b7ad44953485156dbea76, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!136 &6788538757290762320
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -556,7 +535,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e130a52b36e8cc449cf486cc12ad956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseSpeed: 0
   speed: 0
+  rotationSpeed: 0
+  jumpSpeed: 0
+  multiplier: 0
+  powerUpDuration: 60
 --- !u!1 &6788538757856321312
 GameObject:
   m_ObjectHideFlags: 0
