@@ -7,6 +7,7 @@ TagManager:
   - Power Up
   - Speed Up
   - Jump Up
+  - enemy
   layers:
   - Default
   - TransparentFX
