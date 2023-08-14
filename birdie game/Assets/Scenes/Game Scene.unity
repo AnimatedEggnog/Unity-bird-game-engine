@@ -3013,29 +3013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicClips:
-  - {fileID: 8300000, guid: f34b1600c358e8d46b5af405d6e75cda, type: 3}
-  - {fileID: 8300000, guid: 22fadac2373da97498a4d463de116d3b, type: 3}
-  - {fileID: 8300000, guid: 2ee34c1d32d190f4cad999979bc232a3, type: 3}
   - {fileID: 8300000, guid: 1c53d4f0261282b4f9ed5b307102df55, type: 3}
-  - {fileID: 8300000, guid: 190784482146f2d459eaaceafb1f58aa, type: 3}
-  - {fileID: 8300000, guid: ac6262e683f6e8f45a00f7b574872a4c, type: 3}
-  - {fileID: 8300000, guid: 85a4cb4ead1efc5498cdbb5357747a5f, type: 3}
-  - {fileID: 8300000, guid: dcf6d305724de0e4bba0c829a324ccf3, type: 3}
-  - {fileID: 8300000, guid: ce7789666ddc67543bc861fcfd6b8320, type: 3}
-  - {fileID: 8300000, guid: d869651b2b4a6f14e85b589afa318386, type: 3}
-  - {fileID: 8300000, guid: 6d1d0070d7a5fa741b8ceae546bc0727, type: 3}
-  - {fileID: 8300000, guid: c214aec72679f494ea7ef7b616ae921b, type: 3}
-  - {fileID: 8300000, guid: 2c694e59541925a409a95e159d73340e, type: 3}
-  - {fileID: 8300000, guid: 56f37c134f90b8f438b61c68ac07df91, type: 3}
-  - {fileID: 8300000, guid: 98904a48d19cbef40b02f283228be628, type: 3}
-  - {fileID: 8300000, guid: 844c847ef58a93b43987ebf4419a6b12, type: 3}
-  - {fileID: 8300000, guid: c8a7ee2eceb82af4ba70afc7ea5336d8, type: 3}
-  - {fileID: 8300000, guid: ec1ec88db77b48741be9b9bee232f8d2, type: 3}
-  - {fileID: 8300000, guid: dcc14892f26f39145bb2f9ff4e64eaae, type: 3}
-  - {fileID: 8300000, guid: 70e0016ca3cb7d246b25b26ada75226c, type: 3}
-  - {fileID: 8300000, guid: 3aa9feb10f843e144b05bb2a3d6ab96b, type: 3}
-  - {fileID: 8300000, guid: bba64b91555f50f43b23fa0b50b5acf2, type: 3}
-  - {fileID: 8300000, guid: 362f09481bc693442ad3e640662fa736, type: 3}
+  - {fileID: 8300000, guid: 1f5af30c5544b2242bb790ebe25417ad, type: 3}
 --- !u!1 &1100612612
 GameObject:
   m_ObjectHideFlags: 0
